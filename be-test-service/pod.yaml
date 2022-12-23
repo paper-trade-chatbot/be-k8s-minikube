@@ -1,0 +1,21 @@
+# pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: be-test-service
+  labels:
+    app: be-test-service
+spec:
+  containers:
+  - name: be-test-service
+    image: lisyaoran51/be-test-service
+    ports:
+    - containerPort: 80
+      name: rest
+    resources:
+      requests:
+        memory: "64Mi"
+        cpu: "250m"
+      limits:
+        memory: "128Mi"
+        cpu: "500m"

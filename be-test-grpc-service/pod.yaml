@@ -1,0 +1,23 @@
+# pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: be-test-grpc-service
+  labels:
+    app: be-test-grpc-service
+spec:
+  containers:
+  - name: be-test-grpc-service
+    image: lisyaoran51/be-test-grpc-service
+    ports:
+    - containerPort: 80
+      name: rest
+    - containerPort: 9999
+      name: grpc
+    resources:
+      requests:
+        memory: "64Mi"
+        cpu: "250m"
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
