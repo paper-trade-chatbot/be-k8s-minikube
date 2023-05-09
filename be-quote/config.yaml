@@ -27,14 +27,6 @@ data:
   SERVICE_NAME: 'be-quote'
   SERVER_ENV: 'dev'
   PRODUCTION_ENVIRONMENT: 'false'
-  LOG_LEVEL: '4'
-  STACKDRIVER_ENABLED: 'false'
-  GRPC_CONNECT_TIMEOUT_MS: '15000'
-  PROJECT_ID: 'paper-trade-chatbot'
-  FCM_KEY: '.'
-  CDN_URL_PREFIX: "https://storage.googleapis.com"
-  SERVER_SHUTDOWN_GRACE_PERIOD_MS: '30000'
-  GCS_BUCKET_NAME: 'paper-trade-chatbot-bucket'
 
   MEMBER_GRPC_HOST: 'be-member-service'
   MEMBER_GRPC_PORT: '9999'
